@@ -42,6 +42,7 @@ public class ItemService {
                 () -> new RuntimeException("Item Não encontrado")
             );
         item.setNome(update.getNome());
+        item.setQuantidade(update.getQuantidade());
         item.setPreco(update.getPreco());
         itemRepository.save(item); 
     }
